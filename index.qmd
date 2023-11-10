@@ -1,111 +1,412 @@
 ---
-title: La Palma Earthquakes
+title: Safe(r) access for an Australian context - starting a conversation
 author:
-  - name: Steve Purves
-    orcid: 0000-0002-0760-5497
-    corresponding: true
-    email: steve@curvenote.com
-    roles:
-      - Investigation
-      - Project administration
-      - Software
-      - Visualization
+  - name: Ele Morrison
+    orcid: 
+    corresponding: false
+    roles: []
     affiliations:
-      - Curvenote
-  - name: Rowan Cockett
+      - The Australian Injecting and Illicit Drug Users League (AIVL), Canberra, Australia
+  - name: Chris Gough
+    orcid: 
+    corresponding: false
+    roles: []
+    affiliations:
+      - Canberra Alliance for Harm Minimisation & Advocacy (CAHMA), Canberra, Australia
+  - name: MJ Stowe
     orcid: 0000-0002-7859-8394
     corresponding: false
     roles: []
     affiliations:
-      - Curvenote
+      - The South African Network of People Who Use Drugs (SANPUD), South Africa
+      - The Kirby Institute, UNSW Syndey, Sydney, Australia
+  - name: Marianne Jauncey
+    orcid: 0000-0001-9712-5579
+    corresponding: false
+    roles: []
+    affiliations:
+      - MSIC Uniting, Sydney, Australia
+  - name: Nazine Ezard 
+    orcid: 0000-0002-7495-8305
+    corresponding: false
+    roles: []
+    affiliations:
+      - Alcohol and Drug Service St Vincent’s Hospital, Sydney, Australia
+  - name: Alison Ritter
+    orcid: 0000-0001-9540-1920
+    corresponding: false
+    roles: []
+    affiliations:
+      - Drug Policy Modelling Program (DPMP), UNSW Sydney, Sydney, Australia 
+  - name: Suzanne Nielsen 
+    orcid: 0000-0001-5341-1055
+    corresponding: true
+    email: suzanne.nielsen@monash.edu
+    roles: []
+    affiliations:
+      - Monash Addiction Research Centre, Monash University, Melbourne, 
 keywords:
-  - La Palma
-  - Earthquakes
-abstract: |
-  In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). ...
+  - Safe(r) supply
+  - Community engagement
+  - Drug markets
+  - Drug policy
+abstract: |                                           
+  This session will be an interactive conversation with people in the alcohol and other drug field about the readiness of Australia for considering safe(r) access models and reflecting on the evolving approaches taken locally and internationally to respond to an increasingly toxic drug supply. 
+
 plain-language-summary: |
-  Earthquake data for the island of La Palma from the September 2021 eruption is found ...
+  This session will be an interactive conversation with people in the alcohol and other drug field about the readiness of Australia for considering safe(r) access models and reflecting on the evolving approaches taken locally and internationally to respond to an increasingly toxic drug supply.
 key-points:
-  - A web scraping script was developed to pull data from the Instituto Geogràphico Nacional into a machine-readable form for analysis
-  - Earthquake events on La Palma are consistent with the presence of both mantle and crustal reservoirs.
+  - From our sample of people who regularly use opioids from around Australia. most preferred to receive opioid agonist therapy with methadone.
 date: last-modified
+css: custom01.css
 bibliography: references.bib
 citation:
-  container-title: Earth and Space Science
+  container-title: Safer Supply
 number-sections: true
 ---
 
-## Introduction
+# Introduction {#sec-intro}
 
-```{r}
-eruptions <- c(1492, 1585, 1646, 1677, 1712, 1949, 1971, 2021)
-n_eruptions <- length(eruptions)
-```
+In response to a rapidly evolving unregulated drug supply, a continuum
+of safe(r) access models - that facilitate access to a drug of known
+composition as an alternative to illicit market sources - have been
+rapidly up-scaled in different parts of the world. Approaches that have
+been considered under the broad umbrella of safe(r) access models range
+from highly structured and supervised medical trets (such as injectable
+opioid agonist treatment), through to community driven models of drug
+acquisition, regulation and distribution provided in the context of
+civil disobedience. This session will be an interactive conversation
+with people in the alcohol and other drug field about the readiness of
+Australia for considering safe(r) access models and reflecting on the
+evolving approaches taken locally and internationally to respond to an
+increasingly toxic drug supply.
 
-```{r}
-#| label: fig-timeline
-#| fig-cap: Timeline of recent earthquakes on La Palma
-#| fig-alt: An event plot of the years of the last 8 eruptions on La Palma.
-#| fig-height: 1.5
-#| fig-width: 6
-par(mar = c(3, 1, 1, 1) + 0.1)
-plot(eruptions, rep(0, n_eruptions), 
-  pch = "|", axes = FALSE)
-axis(1)
-box()
-```
+The session will start with an introduction to safe(r) access approaches
+and background on an informally convened 'Safe(r) Supply Network' in
+Australia, which began meeting in December 2022, covering a brief
+history of the meetings and an overview of the discussion and issues
+that have been canvassed by the network to date.
 
-```{r}
-#| output: false
-avg_years_between_eruptions <- mean(diff(eruptions[-n_eruptions]))
-avg_years_between_eruptions
-```
+Next, panel members (people who participated in the network meetings)
+will speak for 5 minutes each, providing a diverse range of perspectives
+on the issues of safe(r) access and reflecting on their priorities in
+progressing a conversation on safe(r) access in Australia. 3) Finally,
+the session will end with an interactive discussion providing an
+opportunity for attendees to ask questions, share their views and
+discuss possibilities and considerations for safe(r) access in an
+Australian context.
 
-Based on data up to and including 1971, eruptions on La Palma happen every `r round(avg_years_between_eruptions, 1)` years on average.
+While developing this workshop we have generated a list of additional
+resources that cover a range of topics related to safe(r) supply. This
+resources are presented in @sec-resources below.
 
-Studies of the magma systems feeding the volcano, such as @marrero2019, have proposed that there are two main magma reservoirs feeding the Cumbre Vieja volcano; one in the mantle (30-40km depth) which charges and in turn feeds a shallower crustal reservoir (10-20km depth).
+**Aim:**
 
-Eight eruptions have been recorded since the late 1400s (@fig-timeline).
+The aim of the APSAD panel symposium is to:
 
-Data and methods are discussed in @sec-data-methods.
+1.  bring the Australasian alcohol and other drug field into an ongoing
+    conversation on safe(r) access approaches for Australia.
+2.  consider language and diverse perspectives relating to different
+    access approaches
+3.  provide the opportunity for a broader discussion of how different
+    safe(r) access approaches might work in an Australian context, and
+    next steps for the field. We have provided a list of resources
+    relating to safe(r) supply below to accompany this panel symposium.
 
-Let $x$ denote the number of eruptions in a year. Then, $x$ can be modeled by a Poisson distribution
+<!-- -->
 
-$$
-p(x) = \frac{e^{-\lambda} \lambda^{x}}{x !}
-$$ {#eq-poisson}
+(i) bring the Australasian alcohol and other drug field into an ongoing
+    conversation on safe(r) access approaches for Australia.
+(ii) consider language and diverse perspectives relating to different
+     access approaches
+(iii) provide the opportunity for a broader discussion of how different
+      safe(r) access approaches might work in an Australian context, and
+      next steps for the field. We have provided a list of resources
+      relating to Safe(r) Supply below to accompany this panel
+      symposium.
 
-where $\lambda$ is the rate of eruptions per year. Using @eq-poisson, the probability of an eruption in the next $t$ years can be calculated.
+# Overview of resources {#sec-overview}
 
-| Name                 | Year   |
-| -------------------- | ------ |
-| Current              | 2021   |
-| Teneguía             | 1971   |
-| Nambroque            | 1949   |
-| El Charco            | 1712   |
-| Volcán San Antonio   | 1677   |
-| Volcán San Martin    | 1646   |
-| Tajuya near El Paso  | 1585   |
-| Montaña Quemada      | 1492   |
+This document contains the following resources relating to various
+aspects of safe(r) supply both internationally and in relation to the
+Australian context. The sections covered include:
 
-: Recent historic eruptions on La Palma {#tbl-history}
+1.  Background (see @sec-background)
+2.  Academic articles (see @sec-articles)
+3.  Other resources (see @sec-other-resources)
+    -   Reports
+    -   Websites
+    -   Presentations
+    -   Articles and other media
+4.  Moving forward (@sec-summary)
 
-@tbl-history summarises the eruptions recorded since the colonization of the islands by Europeans in the late 1400s.
+## Background {#sec-background}
 
-![Map of La Palma](images/la-palma-map.png){#fig-map}
+In response to the overdose crisis in the United States and Canada, a
+debate is emerging about providing a 'safer supply' to people who use
+drugs. However, ambiguity about the term muddles discussions and could
+stifle innovation.
 
-La Palma is one of the west most islands in the Volcanic Archipelago of the Canary Islands (@fig-map). 
+Safe(r) supply is defined by the Canadian Association of People Who Use
+Drugs (CAPUD) as:
 
-{{< embed notebooks/explore-earthquakes.qmd#fig-spatial-plot >}}
+> "Safe supply refers to a legal and regulated supply of drugs with
+> mind/body altering properties that traditionally have been accessible
+> only through the illicit drug market."
 
-@fig-spatial-plot shows the location of recent Earthquakes on La Palma.
+There is, however, debate around the term "safe" supply:
 
-## Data & Methods {#sec-data-methods}
+> There are some who argue that "safe" in the term safe supply is
+> inappropriate and misleading because even legal drugs have risks
+> associated with their use. It is true the word "safe" could be
+> misconstrued, but most should recognize its meaning by the way it is
+> being used and in comparison to unsafe drugs. Using an analogy, we can
+> say that thrusting a hammer toward a nail in your hand is not
+> inherently safe, but because hammering nails is legal we can easily
+> access hammers and nails that are "safe" and learn how to use them in
+> safe ways. It is in this sense that legal and regulated drugs are
+> "safe" even though there is still risk of harm. With the quality of
+> the substance assured, people who use drugs are in a far better
+> position to confront the risks associated with drug use.
 
-## Conclusion
+There is a growing debate about providing people who use drugs with a
+drug of known composition instead of what is sold in unregulated
+markets, often referred to as 'safe supply' or 'safer supply'. However,
+these terms are used to describe a diverse set of interventions that are
+delivered along a continuum of care, with different levels of evidence,
+target populations, outcomes and regulatory involvement (see
+@fig-table).
 
-## References {.unnumbered}
+One approach to safe(r) supply involves offering medications to people
+who use drugs as an alternative to drugs from an unregulated market.
+While there is no widespread consensus on which substances and under
+what conditions of use constitute safer supply versus more traditional
+treatments (e.g. OAT). Is liquid methadone consumed at a clinic a form
+of safer supply? What about diamorphine (heroin) or pharmaceutical-grade
+methamphetamine?
 
-:::{#refs}
+Some medical approaches to safe(r) supply require supervision by a
+health professional (e.g. supervised injectable heroin treatment), but
+another approach implemented in parts of North America expands a range
+of prescribed substances for people that are 'provided in a less
+clinical and more flexible way' (i.e. with minimal or no supervision)
+with the goal of preventing overdose from drugs found in the illegal
+supply. For example, a clinic in Vancouver (Canada) allows registered
+clients to purchase individual doses of pharmaceutical-grade fentanyl
+that are priced competitively to opioids sold on the street.
 
+Another approach is for a group of individuals to pool resources to
+purchase illicit drugs, test them and then re-package (with a detailed
+breakdown of the contents) and distribute them to people who . The Drug
+User Liberation Front (DULF) in Vancouver has held at least five events
+where they have distributed the tested and re-packaged drugs without
+serious repercussions or response from law enforcement. In August 2022,
+it was reported that a 'Cocaine, Heroin and Methamphetamine Compassion
+Club and Fulfilment Centre' had been in operation in Vancouver for a
+month, although the club was not authorized by the government and the
+drugs were not sourced from a pharmaceutical company; they were
+purchased from the dark web, tested and sold at cost.
+
+![Example of the packaging used by the Drug User Liberation Front (DULF)
+for their community-regulated safe supply](figures/dulf.png){#fig-dulf}
+
+Beyond the variation in substances, levels of supervision and provision,
+discussions associating safer supply with drug legalization can create
+additional ambiguity. For example it has been argued that providing
+individuals currently using drugs is different from allowing people to
+test and distribute illegally produced drugs, which is very different
+from a legalization model that regulates drug sales to any adult.
+
+Policy debates about reducing harms posed by the unregulated drug supply
+and related social and health harms would be more productive if
+participants recognized and described the particularities of
+interventions instead of referring to them broadly as safer supply. Such
+generalizations restrict any nuanced discussions about the available
+policy options. In @fig-table, a framework to facilitate discussions
+that was developed by @kilmer2023 highlights interventions sometimes
+referred to as safer supply; these options are not necessarily mutually
+exclusive. Traditional opioid agonist treatment (such as buprenorphine
+and methadone), which is sometimes ultimately focused upon abstinence,
+is not included in the list below, however, some people may consider
+this safer supply.
+
+![Example of the various models of safe(r) supply adapted from
+@kilmer2023.](figures/table.png){#fig-table}
+
+# Resources {#sec-resources}
+
+## Academic articles {#sec-articles}
+
+The citations below are a select number of recent articles that provide
+insight to various aspects of safe(r) supply. The list of citations is
+not exhaustive, however, they provide a good general starting point for
+studies relating to safe(r) supply. The citations below are stratified
+by year (including 2023; 2022; 2021; and 2020) and we have provided a
+full reference list of the articles at the end of this document.
+
+::: panel-tabset
+## 2023
+
+-   @ferguson2023;
+
+-   @kamal2023;
+
+-   @karamouzian2023;
+
+-   @mansoor2023;
+
+-   @gagnon2023;
+
+-   @mansoor2023;
+
+-   @kilmer2023
+
+## 2022
+
+-   @foreman-mackey2022
+
+-   @klaire2022
+
+-   @mcneil2022
+
+-   @pauly2022
+
+## 2021
+
+-   @bonn2021
+
+## 2020 {#sec-2020}
+
+-   @fleming2020
+
+-   @ivsins2020
+
+-   @willows2020
 :::
+
+## Other resources {#sec-other-resources}
+
+::: panel-tabset
+## Reports
+
+The reports below are a select number of documents that provide insight
+to various aspects of safe(r) supply. The list of reports is not
+exhaustive, however, they provide a good general starting point for
+understanding safe(r) supply.
+
+Reports include:
+
+-   [CAPUD Safe Supply Concept
+    Document](https://vancouver.ca/files/cov/capud-safe-supply-concept-document.pdf)
+
+-   [Safer Opioid Supply: A Rapid Review of the
+    Evidence](https://odprn.ca/wp-content/uploads/2023/07/Safer-Opioid-Supply-Rapid-Review.pdf)
+
+## Websites
+
+The following websites provide information on safe(r) supply:
+
+-   [Canadian Association of People Who Use Drugs
+    (CAPUD)](https://www.capud.ca/)
+
+-   [National Safer Supply Community of Practice
+    (NSS-CoP)](https://www.nss-aps.ca/)
+
+-   [NSS-CoP Resources for People Who Use
+    Drugs](https://www.nss-aps.ca/resources-people-who-use-drugs)
+
+-   [NSS-CoP Resources for Health Care
+    Providers](https://www.nss-aps.ca/prescriber-resources)
+
+-   [CATIE](https://www.catie.ca/prevention-in-focus/safe-supply-what-is-it-and-what-is-happening-in-canada)
+
+## Presentations
+
+The following presentations (either as static documents or video
+recorded) provide information on safe(r) supply:
+
+-   [The FOpIT Trial: Feasibility of Opioid Injection
+    Trial](https://www.youtube.com/watch?v=w9IbcE8R6Nc)
+
+-   [DULF: Community-level Compassion
+    Clubs](https://www.youtube.com/watch?v=7yor3ZzIqY8&list=PLQ55mAF0bktOR6E3IQg8nwhfa0m7_jLyv)
+
+-   [Imagining safe supply](https://www.youtube.com/watch?v=m2Gtb3w5Ejc)
+
+-   [Safer Supply in the Context of
+    COVID-19](https://www.bccsu.ca/wp-content/uploads/2020/04/Webinar-Safer-Supply-pt-2.pdf)
+
+-   [Safer opioid supply: Spotlight on the vital role of pharmacists in
+    harm reduction
+    programs](https://www.pharmacists.ca/cpha-ca/assets/File/education-practice-resources/WebinarSlideDeck/2022/2Mar2022-SaferSupplyWebinar-Slides.pdf)
+
+## Articles and other media
+
+The following articles and other media provide information on safe(r)
+supply:
+
+-   [Crackdown podcast: Episode 30 -
+    DULF](https://www.crackdownpod.com/episodes/zir7c16nb6j8xkm7tlbi3wd3s5j3d4)
+
+-   [DULF Keeps Distributing Checked Drugs as Health Canada Flags
+    Denial](https://filtermag.org/dulf-safe-supply-compassion-club-exemption/)
+
+-   [Safe supply as a healthcare intervention for people who use drugs-
+    key takeaways from INHSU
+    2022](https://inhsu.org/features/safe-supply-as-a-healthcare-intervention-for-people-who-use-drugs/)
+
+-   [Safer supply of opioids saves lives: Providing alternatives to
+    toxic street
+    drugs](https://theconversation.com/safer-supply-of-opioids-saves-lives-providing-alternatives-to-toxic-street-drugs-177925)
+:::
+
+## Workshop summary {#sec-summary}
+
+This workshop has sought to bring together, people who use drugs,
+practitioners and other key stakeholders, for an open discussion on the
+concept of safe(r) supply and what this approach might look like in an
+Australian context. For any inquiries, please contact the corresponding
+author. Email:
+[suzanne.nielsen\@monash.edu.au](suzanne.nielsen@monash.edu.au)
+
+### Disclosure of Interest Statement:
+
+No funding has been received in the development of this work. AR is the
+recipient of an NHMRC Investigator Grant (APP2016695). SN has previously
+received funding from Seqirus to study pharmaceutical opioid poisoning,
+and was a named investigator (no funds received by SN or her
+institution) on a buprenorphine depot trial funded by Indivior.
+
+\pagebreak
+
+## References
+
+::: {#refs}
+:::
+
+\pagebreak
+
+```{r echo = FALSE, include=TRUE}
+ # install.packages("qrcode")
+ # install.packages("officer")
+
+# Load the qrcode package
+# library(qrcode)
+# library(officer)
+# 
+# # URL to the PDF document
+# pdf_url <- "file:///C:/Users/mjstowe/OneDrive%20-%20UNSW/Desktop/Safe(r)%20access%20for%20an%20Australian%20context%20starting%20a%20conversation_7%20November%202023_MJS.html"
+# 
+# # Generate the QR code
+# qrcode_data <- qr_code(pdf_url)
+# 
+# # Save the QR code as an image file
+# # png("resources_qr.png", bg = "white", width = 300, height = 300)
+# 
+# 
+# # Generate the Q ciss
+# plot(qrcode_data, main = "", fg = "black", bg = "white", quiet = TRUE)
+```
+
+The document was created using `R` with the quarto v. 1.3 @quarto and
+rmarkdown v. 2.25 @rmarkdown packages.
